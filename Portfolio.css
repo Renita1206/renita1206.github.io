@@ -1,0 +1,109 @@
+html{
+    background-color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    right: 0;
+  }
+
+.navbar.sticky{
+    background-color: rgb(125, 240, 253);
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight:200;
+    cursor: pointer;
+    float: left;
+    padding: 14px 16px;
+}
+
+.navbar.sticky .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight:200;
+    cursor: pointer;
+    float: left;
+    padding: 14px 16px;
+}
+
+.navbar .logo a:hover{
+    color:rgb(125, 240, 253);
+    background-color: black;
+}
+
+.navbar.sticky .logo a:hover{
+    color:black;
+    background-color: rgb(125, 240, 253) ;
+}
+
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: rgb(125, 240, 253);
+    text-align: center;
+    padding: 22px 25px;
+    text-decoration: none;
+  }
+
+.navbar.sticky a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 22px 25px;
+    text-decoration: none;
+}
+  
+.navbar a:hover {
+    background: rgb(125, 240, 253);
+    color: black;
+  }
+
+.navbar.sticky a:hover {
+    background: rgb(8, 36, 108);
+    color: white;
+  }
+  
+.home{
+    padding-top: 20%;
+    padding-bottom: 15%;
+}
+
+.hello{
+    color:white;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.i_am{
+  display: block;
+  color:white;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: -3px;
+}
+
+.iam{
+  color:rgb(107, 228, 242);
+}
+
+.intro{
+    background-color: #fff;
+    padding-top: 20%;
+    padding-left: 50%;
+    padding-bottom: 20%;
+    color:black;
+}
