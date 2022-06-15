@@ -114,6 +114,7 @@ html{
     background-color: aliceblue;
     padding-top: 5%;
     padding-bottom: 10%;
+    border-radius: 4%;
 }
 
 .about-heading{
@@ -277,6 +278,7 @@ html{
     padding-top: 5%;
     background-color: aliceblue;
     padding-bottom: 12%;
+    border-radius: 4%;
 }
 
 .skills-heading{
