@@ -24,7 +24,7 @@ html{
 }
 
 .navbar.sticky .logo a{
-    color: #fff;
+    color: black;
     font-size: 30px;
     font-weight:200;
     cursor: pointer;
@@ -33,12 +33,12 @@ html{
 }
 
 .navbar .logo a:hover{
-    color:rgb(125, 240, 253);
+    color:crimson;
     background-color: black;
 }
 
 .navbar.sticky .logo a:hover{
-    color:black;
+    color:white;
     background-color: rgb(125, 240, 253) ;
 }
 
@@ -101,9 +101,26 @@ html{
 }
 
 .intro{
-    background-color: #fff;
-    padding-top: 20%;
-    padding-left: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.intro-div{
+    background-color: aliceblue;
+    padding-top: 5%;
     padding-bottom: 20%;
+}
+
+.intro-heading{
+    padding-left: 40%;
+    color: crimson;
+    padding-bottom: 10%;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.intro-text{
+    padding-left: 50%;
     color:black;
 }
