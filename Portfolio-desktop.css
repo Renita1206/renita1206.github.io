@@ -1,0 +1,255 @@
+html{
+    background-color: black;
+}
+
+/*---------------------------------------------------Navigation Bar---------------------------------------------------*/
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    right: 0;
+  }
+
+.navbar.sticky{
+    background-color: rgb(125, 240, 253);
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight:200;
+    cursor: pointer;
+    float: left;
+    padding: 14px 16px;
+}
+
+.navbar.sticky .logo a{
+    color: black;
+    font-size: 30px;
+    font-weight:200;
+    cursor: pointer;
+    float: left;
+    padding: 14px 16px;
+}
+
+.navbar .logo a:hover{
+    color:crimson;
+    background-color: black;
+}
+
+.navbar.sticky .logo a:hover{
+    color:white;
+    background-color: rgb(125, 240, 253) ;
+}
+
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: rgb(125, 240, 253);
+    text-align: center;
+    padding: 22px 25px;
+    text-decoration: none;
+  }
+
+.navbar.sticky a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 22px 25px;
+    text-decoration: none;
+}
+  
+.navbar a:hover {
+    background: rgb(125, 240, 253);
+    color: black;
+  }
+
+.navbar.sticky a:hover {
+    background: rgb(8, 36, 108);
+    color: white;
+  }
+
+/*---------------------------------------------------Home Page---------------------------------------------------*/
+.home{
+    padding-top: 20%;
+    padding-bottom: 15%;
+}
+
+.hello{
+    color:white;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.i_am{
+  display: block;
+  color:white;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: -3px;
+}
+
+.iam{
+  color:rgb(107, 228, 242);
+}
+
+/*---------------------------------------------------About Section---------------------------------------------------*/
+.about{
+    padding-left: 5%;
+    padding-right: 5%;
+    right:0;
+}
+
+.about-div{
+    background-color: aliceblue;
+    padding-top: 5%;
+    padding-bottom: 12%;
+}
+
+.about-heading{
+    color: crimson;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about-content{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text{
+    flex: 60%;
+    color:black;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.about-picture{
+    flex: 40%;
+}
+
+.about-picture img{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.about-intro{
+    color:black;
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+.intro{
+    color:crimson;
+  }
+
+/*---------------------------------------------------Project Section---------------------------------------------------*/
+.project{
+    padding-top: 3%;
+}
+.project-heading{
+    color:white;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.project .carousel .card{
+    background: rgb(76, 76, 76);
+    border-radius: 10%;
+    padding: 25px 35px;
+    height: 60%;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+ .project .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.project .carousel .card .project-title{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color:#fff;
+}
+
+.project .carousel .card .project-subtitle{
+    font-size: 20px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.project .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(125, 240, 253);
+    transition: all 0.3s ease;
+}
+.project .carousel .card:hover img{
+    border-color: crimson;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(125, 240, 253)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active{
+    background: rgb(125, 240, 253)!important;
+}
+
+.owl-dot:hover{
+    background: rgb(125, 240, 253)!important;
+}
+
+.project-button
+{
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: rgb(125, 240, 253);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.project-button:hover{
+    color: white;
+    background: crimson;
+}
