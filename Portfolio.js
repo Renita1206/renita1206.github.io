@@ -46,4 +46,16 @@ $(document).ready(function(){
     }
   });
   
+  var typed = new Typed(".farewell-note", {
+    strings: ["Made by Renita Kurian",
+              "Vivamus Moriendum Est",
+              "Don't let the muggles get you down.",
+              "I am Divergent. And I can't be controlled.",
+              "It's no use going back to yesterday, because I was a different person then.",
+              "I am IronMan."],
+    typeSpeed: 120,
+    backSpeed: 100,
+    loop: true
+  });
+
 });
