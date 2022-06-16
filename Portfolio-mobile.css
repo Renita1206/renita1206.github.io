@@ -1,11 +1,21 @@
+:root {
+    --dark: #02032d;
+    --accent: #90E0EF;
+    --light: #00B4D8;
+    --tint: #CAF0F8;
+    --grey: #585858;
+    --text: #FFF;
+  }
+
 html{
-    background-color: black;
+    background-color: var(--dark);
     scroll-behavior: smooth;
 }
 
 /*---------------------------------------------------Navigation Bar---------------------------------------------------*/
 .navbar {
     overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     right: 0;
@@ -13,112 +23,157 @@ html{
   }
 
 .navbar.sticky{
-    background-color: rgb(125, 240, 253);
+    background-color: var(--accent);
 }
 
 .navbar .logo a{
-    color: #fff;
+    color: var(--accent);
     font-size: 30px;
     font-weight:200;
     cursor: pointer;
     float: left;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar.sticky .logo a{
-    color: black;
+    color: var(--dark);
     font-size: 30px;
     font-weight:200;
     cursor: pointer;
     float: left;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar .logo a:hover{
-    color:crimson;
-    background-color: black;
+    color: var(--tint);
+    background-color: var(--dark);
 }
 
 .navbar.sticky .logo a:hover{
-    color:white;
-    background-color: rgb(125, 240, 253) ;
+    color:var(--tint);
+    background-color: var(--accent);
 }
 
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-
-.navbar a {
-    float: right;
-    display: block;
-    color: rgb(125, 240, 253);
-    text-align: center;
-    padding: 22px 25px;
-    text-decoration: none;
+.nav-links {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: var(--accent);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
   }
 
-.navbar.sticky a{
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 22px 25px;
-    text-decoration: none;
-}
+  .nav-links.visible {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    z-index: 999; 
+    top: 0;
+    left: 0;
+    background-color: var(--accent); 
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
   
-.navbar a:hover {
-    background: rgb(125, 240, 253);
-    color: black;
+  /* The sidepanel links */
+  .nav-links a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--dark);
+    display: block;
+    transition: 0.3s;
   }
+  
+  /* When you mouse over the navigation links, change their color */
+  .nav-links a:hover {
+    color: var(--tint);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .nav-links .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+.openbtn {
+    color: var(--accent);
+    font-size: 30px;
+    font-weight:200;
+    float: right;
+    padding: 14px 16px;
+}
 
-.navbar.sticky a:hover {
-    background: rgb(8, 36, 108);
-    color: white;
-  }
+.navbar.sticky .openbtn{
+    color: var(--dark);
+    font-size: 30px;
+    font-weight:200;
+    float: right;
+    padding: 14px 16px;
+}
+
+.openbtn:hover{
+    color:var(--tint);
+    background-color: var(--dark);
+}
+
+.navbar.sticky .openbtn:hover{
+    color:var(--tint);
+    background-color: var(--accent) ;
+}
 
 /*---------------------------------------------------Home Page---------------------------------------------------*/
 .home{
-    padding-top: 20%;
-    padding-bottom: 10%;
+    padding-top: 60%;
+    padding-bottom: 100%;
 }
 
 .hello{
-    color:white;
-    font-size: 75px;
+    color:var(--text);
+    font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 .i_am{
   display: block;
-  color:white;
-  font-size: 50px;
+  color:var(--text);
+  font-size: 30px;
   font-weight: 400;
   margin-left: -3px;
 }
 
 .iam{
-  color:rgb(107, 228, 242);
+  color:var(--accent);
 }
-
 /*---------------------------------------------------About Section---------------------------------------------------*/
 .about{
     padding-left: 5%;
     padding-right: 5%;
-    right:0;
 }
 
 .about-div{
-    background-color: aliceblue;
-    padding-top: 5%;
+    /*background-color: aliceblue;*/
+    padding-top: 10%;
     padding-bottom: 10%;
     border-radius: 4%;
 }
 
 .about-heading{
-    color: crimson;
-    font-size: 60px;
+    color: var(--light);
+    font-size: 40px;
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -130,8 +185,8 @@ html{
 }
 
 .about-text{
-    color:black;
-    font-size: 25px;
+    color:var(--text);
+    font-size: 20px;
     font-weight: 200;
 }
 
@@ -141,8 +196,8 @@ html{
 
 .about-picture img{
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .about-intro{
@@ -151,26 +206,27 @@ html{
   
 .intro{
     display: none;
-  }
+}
 
 /*---------------------------------------------------Project Section---------------------------------------------------*/
 .project{
-    padding-top: 3%;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .project-heading{
-    color:white;
-    font-size: 60px;
+    color:var(--light);
+    font-size: 40px;
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
 }
 
 .project .carousel .card{
-    background: rgb(76, 76, 76);
+    background: var(--grey);
     border-radius: 10%;
     padding: 25px 35px;
-    height: 500px;
+    height: 65%;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -185,15 +241,15 @@ html{
 }
 
 .project .carousel .card .project-title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
-    color:#fff;
+    color:var(--text);
 }
 
 .project .carousel .card .project-subtitle{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
-    color:#fff;
+    color:var(--text);
 }
 
 .project .carousel .card img{
@@ -201,16 +257,16 @@ html{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(125, 240, 253);
+    border: 5px solid var(--tint);
     transition: all 0.3s ease;
 }
 
 .project .carousel .card:hover img{
-    border-color: crimson;
+    border-color: var(--accent);
 }
 
 .project .carousel .card:hover{
-    border: 5px solid rgb(125, 240, 253);
+    border: 5px solid var(--accent);
 }
 
 .owl-dots{
@@ -224,7 +280,7 @@ html{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(125, 240, 253)!important;
+    border: 2px solid var(--accent)!important;
     transition: all 0.3s ease;
 }
 
@@ -234,49 +290,44 @@ html{
 }
 
 .owl-dot.active{
-    background: rgb(125, 240, 253)!important;
+    background: var(--accent)!important;
 }
 
 .owl-dot:hover{
-    background: rgb(125, 240, 253)!important;
+    background: var(--accent)!important;
 }
 
 .project-button
 {
     display: inline-block;
-    color: black;
-    font-size: 18px;
+    color: var(--dark);
+    font-size: 15px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 15px;
-    background: rgb(125, 240, 253);
+    background: var(--light);
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
 .project-button:hover{
-    color: white;
-    background: crimson;
+    background: var(--accent);
 }
 
 /*---------------------------------------------------Skills Section---------------------------------------------------*/
 .skills{
     padding-left: 5%;
     padding-right: 5%;
-    right:0;
 }
 
 .skills-div{
     padding-top: 5%;
-    background-color: aliceblue;
-    padding-bottom: 12%;
-    border-radius: 4%;
 }
 
 .skills-heading{
-    color: crimson;
-    font-size: 60px;
+    color: var(--light);
+    font-size: 40px;
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -285,33 +336,46 @@ html{
 .skills-content{
     padding-left: 5%;
     padding-right: 5%;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .skills-text{
-    flex: 60%;
-    color:black;
-    font-size: 25px;
+    color:var(--text);
+    font-size: 20px;
     font-weight: 200;
 }
 
+.skills-icons{
+    display: none;
+}
 
+.skill-set{
+    text-align: left;
+}
+
+.skill-set .type{
+    display: none;
+}
+
+.skill-set li{
+    display: inline;
+    padding-inline-end: 20px;
+}
 /*---------------------------------------------------Contact Section---------------------------------------------------*/
 .contact{
     align-items: center;
+    padding-top: 5%;
 }
 
 .contact-heading{
-    color:white;
-    font-size: 60px;
+    color:var(--light);
+    font-size: 40px;
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
 }
 
 .contact p{
-    color:white;
+    color:var(--light);
     font-size: 25px;
     font-weight: 200;
     text-align: center;
@@ -324,26 +388,20 @@ html{
 
 .socials {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: var(--light);
     text-decoration: none;
     padding-right: 5%;
     padding-left: 5%;
 }
 
 .socials:hover {
-    color: rgb(125, 240, 253);
+    color: var(--accent);
     margin-bottom: 50px;
-}
-
-.mail{
-    font-size: 20px;
-    color:#fff;
-    text-align: center;
-    padding-bottom: 20%;
 }
 
 /*---------------------------------------------------Footer---------------------------------------------------*/
 .farewell-note{
-    color:rgb(170, 224, 243);
+    color:var(--accent);
     text-align: center;
+    font-size: 20px;
 }

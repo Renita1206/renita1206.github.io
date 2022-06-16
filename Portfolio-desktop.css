@@ -1,5 +1,14 @@
+:root {
+    --dark: #02032d;
+    --accent: #90E0EF;
+    --light: #00B4D8;
+    --tint: #CAF0F8;
+    --grey: #585858;
+    --text: #FFF;
+  }
+
 html{
-    background-color: black;
+    background-color: var(--dark);
     scroll-behavior: smooth;
 }
 
@@ -14,69 +23,83 @@ html{
   }
 
 .navbar.sticky{
-    background-color: rgb(125, 240, 253);
+    background-color: var(--accent);
 }
 
 .navbar .logo a{
-    color: #fff;
+    color: var(--accent);
     font-size: 30px;
     font-weight:200;
     cursor: pointer;
     float: left;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar.sticky .logo a{
-    color: black;
+    color: var(--dark);
     font-size: 30px;
     font-weight:200;
     cursor: pointer;
     float: left;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar .logo a:hover{
-    color:crimson;
-    background-color: black;
+    color: var(--tint);
+    background-color: var(--dark);
 }
 
 .navbar.sticky .logo a:hover{
-    color:white;
-    background-color: rgb(125, 240, 253) ;
+    color:var(--tint);
+    background-color: var(--accent);
 }
 
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-
-.navbar a {
+.nav-links a {
     float: right;
     display: block;
-    color: rgb(125, 240, 253);
+    color: var(--accent);
     text-align: center;
+    font-size: 20px;
     padding: 22px 25px;
     text-decoration: none;
   }
 
-.navbar.sticky a{
+.navbar.sticky .nav-links a{
     float: right;
     display: block;
-    color: black;
+    color: var(--dark);
     text-align: center;
     padding: 22px 25px;
     text-decoration: none;
 }
   
-.navbar a:hover {
-    background: rgb(125, 240, 253);
-    color: black;
+.nav-links a:hover {
+    background: var(--accent);
+    color: var(--dark);
   }
 
-.navbar.sticky a:hover {
-    background: rgb(8, 36, 108);
-    color: white;
+.navbar.sticky .nav-links a:hover {
+    background: var(--dark);
+    color: var(--accent);
   }
+
+.openbtn{
+    display: none;
+}
+
+.navbar.sticky .openbtn{
+    display: none;
+}
+
+.nav-links .closebtn{
+    display: none;
+}
+
+.navbar.sticky .nav-links .closebtn{
+    display: none;
+}
 
 /*---------------------------------------------------Home Page---------------------------------------------------*/
 .home{
@@ -85,7 +108,7 @@ html{
 }
 
 .hello{
-    color:white;
+    color:var(--text);
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
@@ -93,14 +116,14 @@ html{
 
 .i_am{
   display: block;
-  color:white;
+  color:var(--text);
   font-size: 50px;
   font-weight: 400;
   margin-left: -3px;
 }
 
 .iam{
-  color:rgb(107, 228, 242);
+  color:var(--accent);
 }
 
 /*---------------------------------------------------About Section---------------------------------------------------*/
@@ -117,7 +140,7 @@ html{
 }
 
 .about-heading{
-    color: crimson;
+    color: var(--light);
     font-size: 60px;
     font-weight: 100;
     font-family: sans-serif;
@@ -133,7 +156,7 @@ html{
 
 .about-text{
     flex: 60%;
-    color:white;
+    color:var(--text);
     font-size: 25px;
     font-weight: 200;
 }
@@ -146,17 +169,16 @@ html{
     border-radius: 50%;
     height: 350px;
     width: 350px;
-    object-fit: cover;
 }
 
 .about-intro{
-    color:white;
+    color:var(--text);
     font-size: 30px;
     font-weight: 200;
-  }
+}
   
 .intro{
-    color:crimson;
+    color:var(--accent)
   }
 
 /*---------------------------------------------------Project Section---------------------------------------------------*/
@@ -166,7 +188,7 @@ html{
 }
 
 .project-heading{
-    color:white;
+    color:var(--light);
     font-size: 60px;
     font-weight: 100;
     font-family: sans-serif;
@@ -174,7 +196,7 @@ html{
 }
 
 .project .carousel .card{
-    background: rgb(76, 76, 76);
+    background: var(--grey);
     border-radius: 10%;
     padding: 25px 35px;
     height: 60%;
@@ -194,13 +216,13 @@ html{
 .project .carousel .card .project-title{
     font-size: 25px;
     font-weight: 500;
-    color:#fff;
+    color:var(--text);
 }
 
 .project .carousel .card .project-subtitle{
     font-size: 20px;
     font-weight: 300;
-    color:#fff;
+    color:var(--text);
 }
 
 .project .carousel .card img{
@@ -208,16 +230,16 @@ html{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgb(125, 240, 253);
+    border: 5px solid var(--tint);
     transition: all 0.3s ease;
 }
 
 .project .carousel .card:hover img{
-    border-color: crimson;
+    border-color: var(--accent);
 }
 
 .project .carousel .card:hover{
-    border: 5px solid rgb(125, 240, 253);
+    border: 5px solid var(--accent);
 }
 
 .owl-dots{
@@ -231,7 +253,7 @@ html{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid rgb(125, 240, 253)!important;
+    border: 2px solid var(--accent)!important;
     transition: all 0.3s ease;
 }
 
@@ -241,30 +263,29 @@ html{
 }
 
 .owl-dot.active{
-    background: rgb(125, 240, 253)!important;
+    background: var(--accent)!important;
 }
 
 .owl-dot:hover{
-    background: rgb(125, 240, 253)!important;
+    background: var(--accent)!important;
 }
 
 .project-button
 {
     display: inline-block;
-    color: black;
+    color: var(--dark);
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 15px;
-    background: rgb(125, 240, 253);
+    background: var(--light);
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
 .project-button:hover{
-    color: white;
-    background: crimson;
+    background: var(--accent);
 }
 
 /*---------------------------------------------------Skills Section---------------------------------------------------*/
@@ -275,13 +296,12 @@ html{
 
 .skills-div{
     padding-top: 5%;
-    /*background-color: aliceblue;*/
     padding-bottom: 5%;
     border-radius: 4%;
 }
 
 .skills-heading{
-    color: crimson;
+    color: var(--light);
     font-size: 60px;
     font-weight: 100;
     font-family: sans-serif;
@@ -298,14 +318,14 @@ html{
 
 .skills-text{
     flex: 60%;
-    color:white;
+    color:var(--text);
     font-size: 25px;
     font-weight: 200;
 }
 
 .skills-icons{
     flex: 40%;
-    color: #565454;
+    color: var(--grey);
     font-size: 75px;
 }
 
@@ -314,7 +334,7 @@ html{
 }
 
 .type{
-    color:rgb(125, 240, 253);
+    color:var(--accent);
 }
 
 .skill-set li{
@@ -329,7 +349,7 @@ html{
 }
 
 .contact-heading{
-    color:607c96;
+    color:var(--light);
     font-size: 60px;
     font-weight: 100;
     font-family: sans-serif;
@@ -337,7 +357,7 @@ html{
 }
 
 .contact p{
-    color:607c96;
+    color:var(--light);
     font-size: 25px;
     font-weight: 200;
     text-align: center;
@@ -350,19 +370,19 @@ html{
 
 .socials {
     font-size: 25px;
-    color: 607c96;
+    color: var(--light);
     text-decoration: none;
     padding-right: 5%;
     padding-left: 5%;
 }
 
 .socials:hover {
-    color: rgb(125, 240, 253);
+    color: var(--accent);
     margin-bottom: 50px;
 }
 
 /*---------------------------------------------------Footer---------------------------------------------------*/
 .farewell-note{
-    color:rgb(170, 224, 243);
+    color:var(--accent);
     text-align: center;
 }

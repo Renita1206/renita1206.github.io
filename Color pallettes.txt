@@ -1,0 +1,6 @@
+    --dark: #02032d;
+    --accent: #90E0EF;
+    --light: #00B4D8;
+    --tint: #CAF0F8;
+    --grey: #585858;
+    --text: #FFF;

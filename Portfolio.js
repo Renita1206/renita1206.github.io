@@ -59,3 +59,12 @@ $(document).ready(function(){
   });
 
 });
+
+function openNav() {
+  $('.nav-links').addClass("visible");
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  $('.nav-links').removeClass("visible");
+}
