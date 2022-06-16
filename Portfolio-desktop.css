@@ -107,13 +107,12 @@ html{
 .about{
     padding-left: 5%;
     padding-right: 5%;
-    right:0;
 }
 
 .about-div{
-    background-color: aliceblue;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    /*background-color: aliceblue;*/
+    padding-top: 3%;
+    padding-bottom: 5%;
     border-radius: 4%;
 }
 
@@ -134,7 +133,7 @@ html{
 
 .about-text{
     flex: 60%;
-    color:black;
+    color:white;
     font-size: 25px;
     font-weight: 200;
 }
@@ -151,7 +150,7 @@ html{
 }
 
 .about-intro{
-    color:black;
+    color:white;
     font-size: 30px;
     font-weight: 200;
   }
@@ -163,6 +162,7 @@ html{
 /*---------------------------------------------------Project Section---------------------------------------------------*/
 .project{
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .project-heading{
@@ -271,13 +271,12 @@ html{
 .skills{
     padding-left: 5%;
     padding-right: 5%;
-    right:0;
 }
 
 .skills-div{
     padding-top: 5%;
-    background-color: aliceblue;
-    padding-bottom: 12%;
+    /*background-color: aliceblue;*/
+    padding-bottom: 5%;
     border-radius: 4%;
 }
 
@@ -294,23 +293,43 @@ html{
     padding-right: 5%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .skills-text{
     flex: 60%;
-    color:black;
+    color:white;
     font-size: 25px;
     font-weight: 200;
 }
 
+.skills-icons{
+    flex: 40%;
+    color: #565454;
+    font-size: 75px;
+}
+
+.skill-set{
+    text-align: left;
+}
+
+.type{
+    color:rgb(125, 240, 253);
+}
+
+.skill-set li{
+    display: inline;
+    padding-inline-end: 20px;
+}
 
 /*---------------------------------------------------Contact Section---------------------------------------------------*/
 .contact{
     align-items: center;
+    padding-top: 5%;
 }
 
 .contact-heading{
-    color:white;
+    color:607c96;
     font-size: 60px;
     font-weight: 100;
     font-family: sans-serif;
@@ -318,7 +337,7 @@ html{
 }
 
 .contact p{
-    color:white;
+    color:607c96;
     font-size: 25px;
     font-weight: 200;
     text-align: center;
@@ -331,7 +350,7 @@ html{
 
 .socials {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: 607c96;
     text-decoration: none;
     padding-right: 5%;
     padding-left: 5%;
@@ -340,13 +359,6 @@ html{
 .socials:hover {
     color: rgb(125, 240, 253);
     margin-bottom: 50px;
-}
-
-.mail{
-    font-size: 20px;
-    color:#fff;
-    text-align: center;
-    padding-bottom: 15%;
 }
 
 /*---------------------------------------------------Footer---------------------------------------------------*/
