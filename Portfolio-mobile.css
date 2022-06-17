@@ -329,12 +329,12 @@ ul.nav-list{
 /*---------------------------------------------------Skills Section---------------------------------------------------*/
 .skills{
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 25%;
 }
 
 .skills-div{
     padding-top: 35%;
-    padding-bottom: 50%;
+    padding-bottom: 5%;
 }
 
 .skills-heading{
@@ -375,8 +375,8 @@ ul.nav-list{
 /*---------------------------------------------------Contact Section---------------------------------------------------*/
 .contact{
     align-items: center;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 30%;
+    padding-bottom: 10%;
 }
 
 .contact-heading{
