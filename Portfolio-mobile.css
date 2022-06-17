@@ -388,9 +388,7 @@ ul.nav-list{
 }
 
 .contact p{
-    color:var(--light);
-    font-size: 20px;
-    text-align: center;
+    display: none;
 }
 
 .contact-icons{
