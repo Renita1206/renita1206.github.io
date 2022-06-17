@@ -333,7 +333,7 @@ ul.nav-list{
 }
 
 .skills-div{
-    padding-top: 35%;
+    padding-top: 15%;
     padding-bottom: 5%;
 }
 
@@ -352,7 +352,7 @@ ul.nav-list{
 
 .skills-text{
     color:var(--text);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 200;
 }
 
@@ -375,8 +375,8 @@ ul.nav-list{
 /*---------------------------------------------------Contact Section---------------------------------------------------*/
 .contact{
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .contact-heading{
@@ -389,18 +389,16 @@ ul.nav-list{
 
 .contact p{
     color:var(--light);
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 20px;
     text-align: center;
 }
 
 .contact-icons{
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .socials {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--light);
     text-decoration: none;
     padding-right: 5%;
@@ -408,12 +406,12 @@ ul.nav-list{
 
 .socials:hover {
     color: var(--accent);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /*---------------------------------------------------Footer---------------------------------------------------*/
 .farewell-note{
     color:var(--accent);
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
