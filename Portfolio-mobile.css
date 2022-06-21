@@ -27,33 +27,11 @@ html{
 }
 
 .navbar .logo a{
-    color: var(--accent);
-    font-size: 30px;
-    font-weight:200;
-    cursor: pointer;
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: none;
 }
 
 .navbar.sticky .logo a{
-    color: var(--dark);
-    font-size: 30px;
-    font-weight:200;
-    cursor: pointer;
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar .logo a:hover{
-    color: var(--tint);
-    background-color: var(--dark);
-}
-
-.navbar.sticky .logo a:hover{
-    color:var(--tint);
-    background-color: var(--accent);
+    display: none;
 }
 
 .nav-links {
@@ -112,7 +90,7 @@ html{
     color: var(--accent);
     font-size: 30px;
     font-weight:200;
-    float: right;
+    float: left;
     padding: 14px 16px;
 }
 
@@ -120,7 +98,7 @@ html{
     color: var(--dark);
     font-size: 30px;
     font-weight:200;
-    float: right;
+    float: left;
     padding: 14px 16px;
 }
 
