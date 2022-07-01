@@ -1,10 +1,11 @@
 :root {
-    --dark: #02032d;
-    --accent: #90E0EF;
-    --light: #00B4D8;
-    --tint: #CAF0F8;
+    --dark: #ECF0F1;
+    --accent: #33CCCC;
+    --light: #2980B9;
+    --tint: #2C3E50;
     --grey: #585858;
-    --text: #FFF;
+    --text: #2C3E50;
+    --projectCard: #a9eeee;
   }
 
 html{
@@ -200,7 +201,7 @@ html{
 }
 
 .project .carousel .card{
-    background: var(--grey);
+    background: var(--projectCard);
     border-radius: 10%;
     padding: 25px 35px;
     height: 60%;

@@ -1,0 +1,96 @@
+https://colorhunt.co/palettes/space
+   
+    Dark - Blue accent  ***
+    --dark: #02032d;
+    --accent: #90E0EF;
+    --light: #00B4D8;
+    --tint: #CAF0F8;
+    --grey: #585858;
+    --text: #FFF;
+    --projectCard: #373737;
+
+    Dark - Blue accent 2
+    --dark: #071E3D;
+    --accent: #21E6C1;
+    --light: #1F4287;
+    --tint: #278EA5;
+    --grey: #585858;
+    --text: #FFF;
+    --projectCard: #044a5f;
+
+
+    Dark - Blue accent 3
+    --dark: #031e25;
+    --accent: #A2DBFA;
+    --light: #39A2DB;
+    --tint: #E8F0F2;
+    --grey: #585858;
+    --text: #E8F0F2;
+    --projectCard: #4a8eb2;
+
+
+    Light - Green accent ***
+    --dark: #EEEEEE;
+    --accent: #32E0C4;
+    --light: #0D7377;
+    --tint: #212121;
+    --grey: #585858;
+    --text: #212121;
+    --projectCard: #aaebe0;
+
+
+    Light - Blue accent
+    --dark: #D8E3E7;
+    --accent: #51C4D3;
+    --light: #126E82;
+    --tint: #132C33;
+    --grey: #585858;
+    --text: #132C33;
+    --projectCard: #9dccd6;
+
+
+    Light - Blue accent 2 ***
+    --dark: #ECF0F1;
+    --accent: #33CCCC;
+    --light: #2980B9;
+    --tint: #2C3E50;
+    --grey: #585858;
+    --text: #2C3E50;
+    --projectCard: #a9eeee;
+
+
+    Light - Blue accent 3
+    --dark: #D8E3E7;
+    --accent: #51C4D3;
+    --light: #126E82;
+    --tint: #132C33;
+    --grey: #585858;
+    --text: #132C33;
+    --projectCard: #a9eeee;
+
+    Light - Purple accent ***
+    --dark: #E4FBFF;
+    --accent: #9390ef;
+    --light: #7868E6;
+    --tint: #EDEEF7;
+    --grey: #585858;
+    --text: #132C33;
+    --projectCard: #A7C5EB;
+
+    Light - light blue accent
+    --dark: #F4F9F9;
+    --accent: #6acfd4;
+    --light: #7db7be;
+    --tint: #AAAAAA;
+    --grey: #585858;
+    --text: #757474;
+    --projectCard: #CAE4DB;
+
+    Light - dark blue accent
+    --dark: #F3F9FB;
+    --accent: #226597;
+    --light: #6d9ca7;
+    --tint: #113F67;
+    --grey: #585858;
+    --text: #113F67;
+    --projectCard: #D2FAFB;

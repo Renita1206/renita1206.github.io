@@ -11,14 +11,14 @@ $(document).ready(function(){
 
   // typing text animation script
   var typed = new Typed(".iam", {
-      strings: ["Computer Science Student","Research Intern", "ML/Data Science Enthusiast","Coder"],
+      strings: ["Computer Science Student","ML/Data Science Enthusiast","Coder"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
   });
 
   var typed = new Typed(".intro", {
-    strings: ["Computer Science Student","Research Intern", "ML/Data Science Enthusiast","Coder","Lover of Books", "slayer of dragons","Witch","Avenger"],
+    strings: ["a Computer Science Student", "a ML/Data Science Enthusiast","a Coder","an Avid Reader"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -52,8 +52,10 @@ $(document).ready(function(){
               "Don't let the muggles get you down.",
               "I am Divergent. And I can't be controlled.",
               "It's no use going back to yesterday, because I was a different person then.",
-              "I am IronMan."],
-    typeSpeed: 120,
+              "I am IronMan.",
+              "We're all just a bunch of addicts, struggling with our drug of choice.",
+              "In love with being alive"],
+    typeSpeed: 100,
     backSpeed: 100,
     loop: true
   });
