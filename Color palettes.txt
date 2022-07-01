@@ -49,7 +49,7 @@ https://colorhunt.co/palettes/space
     --projectCard: #9dccd6;
 
 
-    Light - Blue accent 2 ***
+    Light - Blue accent 2 *Current Choice
     --dark: #ECF0F1;
     --accent: #33CCCC;
     --light: #2980B9;
