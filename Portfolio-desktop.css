@@ -1,11 +1,11 @@
 :root {
-    --dark: #ECF0F1;
-    --accent: #33CCCC;
-    --light: #2980B9;
-    --tint: #2C3E50;
+    --dark: #071E3D;
+    --accent: #21E6C1;
+    --light: #1F4287;
+    --tint: #278EA5;
     --grey: #585858;
-    --text: #2C3E50;
-    --projectCard: #a9eeee;
+    --text: #FFF;
+    --projectCard: #044a5f;
   }
 
 html{
