@@ -11,14 +11,14 @@ $(document).ready(function(){
 
   // typing text animation script
   var typed = new Typed(".iam", {
-      strings: ["Computer Science Student","ML/Data Science Enthusiast","Coder"],
+      strings: ["a Computer Science Student","a Data Science Enthusiast", "Open to work"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true
   });
 
   var typed = new Typed(".intro", {
-    strings: ["a Computer Science Student", "a ML/Data Science Enthusiast","a Coder","an Avid Reader"],
+    strings: ["a Computer Science Student", "a Data Science Enthusiast","an Avid Reader", "an Athlete"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -55,10 +55,8 @@ $(document).ready(function(){
               "I am IronMan.",
               "We're all just a bunch of addicts, struggling with our drug of choice.",
               "Paradise isn't a place, it's a feeling.",
-              "I wonder if fears ever really go away, or if they just lose their power over us.",
-              "In the end, we'll all become stories.",
               "Suddenly you're ripped into being alive. And life is pain, and life is suffering, and life is horror. But my God, you're alive and it's spectacular",
-              "Sometimes the greatest adventure is simply a conversation."],
+              "In art, we find kindred souls."],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

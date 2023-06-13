@@ -11,7 +11,8 @@
     --socialiconhover: #50c386;
     
     --projectCard: #bfdbaf;
-    --projecttitle: #e5efdc;
+    --projecttitle: var(--accent);
+    --projecttitledark: #060807;
   }
 
 html{
@@ -124,17 +125,17 @@ html{
 }
 
 .home-text{
-    flex: 60%;
-    padding-top: 10%;
+    flex: 100%;
+    padding-top: 1%;
     padding-bottom: 5%;
+    text-align: center;
 }
 
 .home-img{
-    flex: 40%;
-    background-image: url("3.jpg");
+    flex: 0%;
+    /*background-image: url("3.jpg");*/
     background-size: contain;
     background-repeat: no-repeat;
-    
 }
 
 .hello{
@@ -233,19 +234,19 @@ html{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+    border: 2px solid var(--tint);
 }
 
+/*Arcade Games
 .project .carousel .c1{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCJpVcLke7psws7XJnsTU1S80Pbw8aXWEZQ&usqp=CAU');
     background-repeat:no-repeat;
     background-size: 100% 100%;
 }
 
-.project .carousel .c2{
-    background-image: none;
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-}
+.project .carousel .c1 .project-title{
+    color: var(--projecttitledark)
+}*/
 
  .project .carousel .card .box{
     display: flex;
@@ -257,23 +258,15 @@ html{
 }
 
 .project .carousel .card .project-title{
+    color:var(--text);
     font-size: 25px;
     font-weight: 500;
-    color:var(--projecttitle);
 }
 
 .project .carousel .card .project-subtitle{
-    display: none;
-}
-
-.project .carousel .card:hover .project-title {
-    color:var(--text);
-}
-
-.project .carousel .card:hover .project-subtitle {
-    display: block;
     font-size: 20px;
     font-weight: 300;
+    padding-top: 5%;
     color:var(--text);
 }
 
