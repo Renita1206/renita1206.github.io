@@ -408,3 +408,7 @@ html{
     color:var(--textaccent);
     text-align: center;
 }
+
+.farewell-note-p{
+    text-align: center;
+}
