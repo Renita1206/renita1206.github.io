@@ -12,6 +12,11 @@
     
     --projectCard: #bfdbaf;
     --projecttitle: #e5efdc;
+
+    --fontSize: 16px;
+    --fontSizeHeading: 25px;
+    --fontSizeHome: 40px;
+    --fontSizeNav: 20px;
   }
 
 html{
@@ -72,7 +77,7 @@ html{
   .nav-links a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: var(--fontSizeNav);
     color: var(--bgcolor);
     display: block;
     transition: 0.3s;
@@ -88,14 +93,14 @@ html{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 30px;
+    font-size: var(--fontSizeHeading);
     margin-left: 50px;
   }
   
   /* Style the button that is used to open the sidepanel */
 .openbtn {
     color: var(--accent);
-    font-size: 30px;
+    font-size: var(--fontSizeHeading);
     font-weight:200;
     float: left;
     padding: 14px 16px;
@@ -103,7 +108,7 @@ html{
 
 .navbar.sticky .openbtn{
     color: var(--bgcolor);
-    font-size: 30px;
+    font-size: var(--fontSizeHeading);
     font-weight:200;
     float: left;
     padding: 14px 16px;
@@ -141,7 +146,7 @@ ul.nav-list{
 
 .hello{
     color:var(--text);
-    font-size: 50px;
+    font-size: var(--fontSizeHome);
     font-weight: 600;
     margin-left: -3px;
 }
@@ -149,7 +154,7 @@ ul.nav-list{
 .i_am{
   display: block;
   color:var(--text);
-  font-size: 25px;
+  font-size: var(--fontSizeHeading);
   font-weight: 400;
   margin-left: -3px;
 }
@@ -173,7 +178,7 @@ ul.nav-list{
 
 .about-heading{
     color: var(--headingcolor);
-    font-size: 40px;
+    font-size: var(--fontSizeHeading);
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -186,7 +191,7 @@ ul.nav-list{
 
 .about-text{
     color:var(--text);
-    font-size: 30px;
+    font-size: var(--fontSize);
     font-weight: 200;
 }
 
@@ -216,7 +221,7 @@ ul.nav-list{
 
 .project-heading{
     color:var(--headingcolor);
-    font-size: 40px;
+    font-size: var(--fontSizeHeading);
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -254,7 +259,7 @@ ul.nav-list{
 }
 
 .project .carousel .card .project-title{
-    font-size: 30px;
+    font-size: var(--fontSize);
     font-weight: 500;
     color:var(--projecttitle);
 }
@@ -268,7 +273,7 @@ ul.nav-list{
 
 .project .carousel .card:hover .project-subtitle {
     display: block;
-    font-size: 20px;
+    font-size: var(--fontSize);
     font-weight: 300;
     color:var(--text);
 }
@@ -329,7 +334,7 @@ ul.nav-list{
 
 .skills-heading{
     color: var(--headingcolor);
-    font-size: 40px;
+    font-size: var(--fontSizeHeading);
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -342,7 +347,7 @@ ul.nav-list{
 
 .skills-text{
     color:var(--text);
-    font-size: 25px;
+    font-size: var(--fontSize);
     font-weight: 200;
 }
 
@@ -371,7 +376,7 @@ ul.nav-list{
 
 .contact-heading{
     color:var(--headingcolor);
-    font-size: 40px;
+    font-size: var(--fontSizeHeading);
     font-weight: 100;
     font-family: sans-serif;
     text-align: center;
@@ -386,7 +391,7 @@ ul.nav-list{
 }
 
 .socials {
-    font-size: 40px;
+    font-size: var(--fontSizeNav);
     color: var(--text);
     text-decoration: none;
     padding-right: 5%;
@@ -401,5 +406,9 @@ ul.nav-list{
 .farewell-note{
     color:var(--textaccent);
     text-align: center;
-    font-size: 20px;
+    font-size: var(--fontSize);
+}
+
+.farewell-note-p{
+    text-align: center;
 }
